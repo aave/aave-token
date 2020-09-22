@@ -1,0 +1,153 @@
+{
+  "AaveToken": {
+    "buidlerevm": {
+      "address": "0x8858eeB3DfffA017D4BCE9801D340D36Cf895CCf"
+    },
+    "ropsten": {
+      "address": "0x74dA004A1B81b4d0C79F5820f9FF22647cb1dD95",
+      "deployer": "0x85e4A467343c0dc4aDAB74Af84448D9c45D8ae6F"
+    },
+    "kovan": {
+      "address": "0xe4483afcf0d612c011679C76B61F5b0d27bAF93C",
+      "deployer": "0x85e4A467343c0dc4aDAB74Af84448D9c45D8ae6F"
+    },
+    "soliditycoverage": {
+      "address": "0x8858eeB3DfffA017D4BCE9801D340D36Cf895CCf"
+    },
+    "coverage": {
+      "address": "0x8858eeB3DfffA017D4BCE9801D340D36Cf895CCf"
+    }
+  },
+  "InitializableAdminUpgradeabilityProxy": {
+    "buidlerevm": {
+      "address": "0xf784709d2317D872237C4bC22f867d1BAe2913AB",
+      "deployer": "0xc783df8a850f42e7F7e57013759C285caa701eB6"
+    },
+    "ropsten": {
+      "address": "0x9bd4a3EBc2473B0960330E77FcDCb3E321D6F57c",
+      "deployer": "0x85e4A467343c0dc4aDAB74Af84448D9c45D8ae6F"
+    },
+    "kovan": {
+      "address": "0x43EF7E5d4bd7deF14e6BD31636F7fb8383Ede12a",
+      "deployer": "0x85e4A467343c0dc4aDAB74Af84448D9c45D8ae6F"
+    },
+    "soliditycoverage": {
+      "address": "0xf784709d2317D872237C4bC22f867d1BAe2913AB",
+      "deployer": "0xc783df8a850f42e7F7e57013759C285caa701eB6"
+    },
+    "coverage": {
+      "address": "0xf784709d2317D872237C4bC22f867d1BAe2913AB",
+      "deployer": "0xc783df8a850f42e7F7e57013759C285caa701eB6"
+    }
+  },
+  "MintableErc20": {
+    "buidlerevm": {
+      "address": "0x0078371BDeDE8aAc7DeBfFf451B74c5EDB385Af7"
+    },
+    "ropsten": {
+      "address": "0xa5d7306E2646A778D83FD74d3cBd2d09229cfbdE",
+      "deployer": "0x959FD7Ef9089B7142B6B908Dc3A8af7Aa8ff0FA1"
+    },
+    "soliditycoverage": {
+      "address": "0x0078371BDeDE8aAc7DeBfFf451B74c5EDB385Af7"
+    },
+    "coverage": {
+      "address": "0x0078371BDeDE8aAc7DeBfFf451B74c5EDB385Af7"
+    }
+  },
+  "LEND": {
+    "buidlerevm": {
+      "address": "0x0078371BDeDE8aAc7DeBfFf451B74c5EDB385Af7",
+      "deployer": "0xc783df8a850f42e7F7e57013759C285caa701eB6"
+    },
+    "soliditycoverage": {
+      "address": "0x0078371BDeDE8aAc7DeBfFf451B74c5EDB385Af7",
+      "deployer": "0xc783df8a850f42e7F7e57013759C285caa701eB6"
+    },
+    "coverage": {
+      "address": "0x0078371BDeDE8aAc7DeBfFf451B74c5EDB385Af7",
+      "deployer": "0xc783df8a850f42e7F7e57013759C285caa701eB6"
+    }
+  },
+  "LendToAaveMigrator": {
+    "buidlerevm": {
+      "address": "0xf784709d2317D872237C4bC22f867d1BAe2913AB"
+    },
+    "ropsten": {
+      "address": "0x9bd4a3EBc2473B0960330E77FcDCb3E321D6F57c",
+      "deployer": "0x85e4A467343c0dc4aDAB74Af84448D9c45D8ae6F"
+    },
+    "kovan": {
+      "address": "0x43EF7E5d4bd7deF14e6BD31636F7fb8383Ede12a",
+      "deployer": "0x85e4A467343c0dc4aDAB74Af84448D9c45D8ae6F"
+    },
+    "soliditycoverage": {
+      "address": "0xf784709d2317D872237C4bC22f867d1BAe2913AB"
+    },
+    "coverage": {
+      "address": "0xf784709d2317D872237C4bC22f867d1BAe2913AB"
+    }
+  },
+  "LendToAaveMigratorImpl": {
+    "buidlerevm": {
+      "address": "0xf4e77E5Da47AC3125140c470c71cBca77B5c638c"
+    },
+    "ropsten": {
+      "address": "0xB6919b31b327556ef418f5e21286Deb3Ef0fFaFa",
+      "deployer": "0x85e4A467343c0dc4aDAB74Af84448D9c45D8ae6F"
+    },
+    "kovan": {
+      "address": "0x275F60D3701AC7e580439087a1d4def42473b38a",
+      "deployer": "0x85e4A467343c0dc4aDAB74Af84448D9c45D8ae6F"
+    },
+    "soliditycoverage": {
+      "address": "0xf4e77E5Da47AC3125140c470c71cBca77B5c638c"
+    },
+    "coverage": {
+      "address": "0xf4e77E5Da47AC3125140c470c71cBca77B5c638c"
+    }
+  },
+  "DoubleTransferHelper": {
+    "buidlerevm": {
+      "address": "0xEcc0a6dbC0bb4D51E4F84A315a9e5B0438cAD4f0",
+      "deployer": "0xc783df8a850f42e7F7e57013759C285caa701eB6"
+    },
+    "soliditycoverage": {
+      "address": "0xEcc0a6dbC0bb4D51E4F84A315a9e5B0438cAD4f0",
+      "deployer": "0xc783df8a850f42e7F7e57013759C285caa701eB6"
+    },
+    "coverage": {
+      "address": "0xEcc0a6dbC0bb4D51E4F84A315a9e5B0438cAD4f0",
+      "deployer": "0xc783df8a850f42e7F7e57013759C285caa701eB6"
+    }
+  },
+  "MockTransferHook": {
+    "buidlerevm": {
+      "address": "0x3619DbE27d7c1e7E91aA738697Ae7Bc5FC3eACA5"
+    },
+    "ropsten": {
+      "address": "0x1F75ce64d2209640F9657aBB2A9a6445d410023b",
+      "deployer": "0x91f1F189a28F8954637297D72eA756EA6F450f07"
+    },
+    "soliditycoverage": {
+      "address": "0x3619DbE27d7c1e7E91aA738697Ae7Bc5FC3eACA5"
+    },
+    "coverage": {
+      "address": "0x3619DbE27d7c1e7E91aA738697Ae7Bc5FC3eACA5"
+    }
+  },
+  "AaveTokenImpl": {
+    "buidlerevm": {
+      "address": "0x7c2C195CD6D34B8F845992d380aADB2730bB9C6F",
+      "deployer": "0xc783df8a850f42e7F7e57013759C285caa701eB6"
+    },
+    "ropsten": {
+      "address": "0x7Ad0745C093B4796C09398E6FD70b64419394ea2",
+      "deployer": "0x85e4A467343c0dc4aDAB74Af84448D9c45D8ae6F"
+    },
+    "kovan": {
+      "address": "0x06f12Ff6016Eec4b3Ca329015aB67D25B29a3a2C",
+      "deployer": "0x85e4A467343c0dc4aDAB74Af84448D9c45D8ae6F"
+    }
+  }
+}

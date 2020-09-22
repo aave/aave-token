@@ -1,0 +1,95 @@
+{
+  "name": "aave-token",
+  "version": "1.0.0",
+  "description": "Aave ERC20 token",
+  "scripts": {
+    "run-env": "npm i && tail -f /dev/null",
+    "buidler": "buidler",
+    "buidler-kovan": "buidler --network kovan",
+    "buidler-ropsten": "buidler --network ropsten",
+    "buidler-main": "buidler --network main",
+    "buidler-docker": "buidler --network buidlerevm_docker",
+    "buidler help": "buidler help",
+    "compile": "buidler compile",
+    "types-gen": "buidler typechain",
+    "test": "buidler test",
+    "coverage": "buidler coverage --network coverage",
+    "dev:deployment": "buidler dev-deployment --admin ${AAVE_ADMIN:-''} --lend-token-address ${LEND_TOKEN:-''}",
+    "docker:deployment": "npm run buidler-docker -- dev-deployment --admin ${AAVE_ADMIN:-''} --lend-token-address ${LEND_TOKEN:-''}",
+    "dev:main:deployment": "buidler main-deployment",
+    "dev:deploy-AaveToken": "buidler deploy-AaveToken",
+    "dev:deploy-LendToAaveMigrator": "buidler deploy-LendToAaveMigrator",
+    "dev:initialize-AaveToken": "buidler initialize-AaveToken --admin ${AAVE_ADMIN:-''}",
+    "dev:initialize-LendToAaveMigrator": "buidler initialize-LendToAaveMigrator --admin ${AAVE_ADMIN:-''}",
+    "kovan:deployment": "npm run buidler-kovan -- testnet-deployment --verify",
+    "kovan:deploy-AaveToken": "npm run buidler-kovan deploy-AaveToken",
+    "kovan:deploy-LendToAaveMigrator": "npm run buidler-kovan deploy-LendToAaveMigrator",
+    "kovan:initialize-AaveToken": "npm run buidler-kovan -- initialize-AaveToken --admin ${AAVE_ADMIN:-''}",
+    "kovan:initialize-LendToAaveMigrator": "npm run buidler-kovan -- initialize-LendToAaveMigrator --admin ${AAVE_ADMIN:-''}",
+    "ropsten:deployment": "npm run buidler-ropsten -- testnet-deployment --verify",
+    "ropsten:deploy-AaveToken": "npm run buidler-ropsten deploy-AaveToken",
+    "ropsten:deploy-LendToAaveMigrator": "npm run buidler-ropsten deploy-LendToAaveMigrator",
+    "ropsten:initialize-AaveToken": "npm run buidler-ropsten -- initialize-AaveToken --admin ${AAVE_ADMIN:-''}",
+    "ropsten:initialize-LendToAaveMigrator": "npm run buidler-ropsten -- initialize-LendToAaveMigrator --admin ${AAVE_ADMIN:-''}",
+    "main:deployment": "npm run buidler-main -- main-deployment --verify",
+    "main:deploy-AaveToken": "npm run buidler-main deploy-AaveToken",
+    "main:deploy-LendToAaveMigrator": "npm run buidler-main -- deploy-LendToAaveMigrator --lend-token-address ${LEND_TOKEN:-''}",
+    "main:initialize-AaveToken": "npm run buidler-main -- initialize-AaveToken --admin ${AAVE_ADMIN:-''} --onlyProxy",
+    "main:initialize-LendToAaveMigrator": "npm run buidler-main -- initialize-LendToAaveMigrator --admin ${AAVE_ADMIN:-''} --onlyProxy"
+  },
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.4.7",
+    "@nomiclabs/buidler-ethers": "1.3.4-rc.0",
+    "@nomiclabs/buidler-etherscan": "^2.1.0",
+    "@nomiclabs/buidler-waffle": "1.3.4",
+    "@openzeppelin/contracts": "3.0.1",
+    "@typechain/ethers-v4": "1.0.0",
+    "@typechain/truffle-v4": "2.0.2",
+    "@typechain/truffle-v5": "2.0.2",
+    "@typechain/web3-v1": "1.0.0",
+    "@types/chai": "4.2.11",
+    "@types/lowdb": "1.0.9",
+    "@types/mocha": "7.0.2",
+    "@types/node": "14.0.5",
+    "bignumber.js": "9.0.0",
+    "buidler-typechain": "0.1.1",
+    "chai": "4.2.0",
+    "chai-bignumber": "3.0.0",
+    "eth-sig-util": "2.5.3",
+    "ethereum-waffle": "2.5.1",
+    "ethereumjs-util": "7.0.2",
+    "ethers": "4.0.47",
+    "husky": "^4.2.5",
+    "lowdb": "1.0.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-solidity": "^1.0.0-alpha.53",
+    "solidity-coverage": "^0.7.10",
+    "ts-generator": "0.0.8",
+    "ts-node": "8.10.2",
+    "typechain": "2.0.0",
+    "typescript": "3.9.3"
+  },
+  "author": "Aave",
+  "contributors": [
+    {
+      "name": "Ernesto Boado",
+      "email": "ernesto@aave.com"
+    },
+    {
+      "name": "Emilio Frangella",
+      "email": "emilio@aave.com"
+    },
+    {
+      "name": "Andrey Kozlov",
+      "email": "andrey@aave.com"
+    },
+    {
+      "name": "David Racero",
+      "email": "david.k@aave.com"
+    }
+  ],
+  "license": "AGPLv3",
+  "dependencies": {
+    "tmp-promise": "^3.0.2"
+  }
+}
