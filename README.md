@@ -98,7 +98,7 @@ The proxies will be initialized during the deployment with the `$AAVE_ADMIN` add
 ## Audits
 
 The Solidity code in this repository has undergone 2 traditional smart contracts' audits by Consensys Diligence and Certik, and properties' verification process by Certora. The reports are:
-- [Consensys Diligence](https://diligence.consensys.net/audits/private/g6kd633m-aave-token/)
+- [Consensys Diligence](https://diligence.consensys.net/audits/2020/07/aave-token/)
 - [Certik](audits/AaveTokenReport_CertiK.pdf)
 - [Certora](audits/AaveTokenVerification_by_Certora.pdf)
 
