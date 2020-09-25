@@ -19,15 +19,15 @@ usePlugin("solidity-coverage");
 });
 
 const DEFAULT_BLOCK_GAS_LIMIT = 12500000;
-const DEFAULT_GAS_PRICE = 1;
+const DEFAULT_GAS_PRICE = 50000000000; // 50 gwei
 const HARDFORK = "istanbul";
 const INFURA_KEY = process.env.INFURA_KEY || "";
 const ETHERSCAN_KEY = process.env.ETHERSCAN_KEY || "";
 const MNEMONIC_PATH = "m/44'/60'/0'/0";
 const MNEMONICS: { [network: string]: string } = {
-  [eEthereumNetwork.kovan]: process.env.MNEMONIC_KOVAN || "",
-  [eEthereumNetwork.ropsten]: process.env.MNEMONIC_ROPSTEN || "",
-  [eEthereumNetwork.main]: process.env.MNEMONIC_MAIN || "",
+  [eEthereumNetwork.kovan]: process.env.MNEMONIC || "",
+  [eEthereumNetwork.ropsten]: process.env.MNEMONIC || "",
+  [eEthereumNetwork.main]: process.env.MNEMONIC || "",
 };
 
 const getCommonNetworkConfig = (
@@ -35,11 +35,12 @@ const getCommonNetworkConfig = (
   networkId: number
 ) => {
   return {
-    url: `https://${networkName}.infura.io/v3/${INFURA_KEY}`,
+    url: `https://${
+      networkName == "main" ? `${networkName}net` : networkName
+    }.infura.io/v3/${INFURA_KEY}`,
     hardfork: HARDFORK,
     blockGasLimit: DEFAULT_BLOCK_GAS_LIMIT,
     gasPrice: 4000000000,
-    gasMultiplier: DEFAULT_GAS_PRICE,
     chainId: networkId,
     accounts: {
       mnemonic: MNEMONICS[networkName],
@@ -75,7 +76,7 @@ const config: BuidlerConfig = {
       hardfork: "istanbul",
       blockGasLimit: DEFAULT_BLOCK_GAS_LIMIT,
       gas: DEFAULT_BLOCK_GAS_LIMIT,
-      gasPrice: 8000000000,
+      gasPrice: DEFAULT_GAS_PRICE,
       chainId: BUIDLEREVM_CHAINID,
       throwOnTransactionFailures: true,
       throwOnCallFailures: true,

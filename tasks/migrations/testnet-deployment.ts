@@ -40,12 +40,12 @@ task("testnet-deployment", "Deployment in mainnet network")
 
     await BRE.run(`initialize-${eContractid.AaveToken}`, {
       admin: aaveAdmin,
-      onlyProxy: false,
+      onlyProxy: true,
     });
 
     await BRE.run(`initialize-${eContractid.LendToAaveMigrator}`, {
       admin: aaveAdmin,
-      onlyProxy: false,
+      onlyProxy: true,
     });
 
     console.log(

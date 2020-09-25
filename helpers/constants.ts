@@ -38,9 +38,9 @@ export const getAaveAdminPerNetwork = (
     {
       [eEthereumNetwork.coverage]: ZERO_ADDRESS,
       [eEthereumNetwork.buidlerevm]: ZERO_ADDRESS,
-      [eEthereumNetwork.kovan]: "0x374d0940dc9a980219e0aA6566C3067159d2F442",
+      [eEthereumNetwork.kovan]: "0x6940B44a8eFBc625e1309d79F8dea34f155D4330",
       [eEthereumNetwork.ropsten]: "0xEd93e49A2d75beA505fD4D1A0Dff745f69F2E997",
-      [eEthereumNetwork.main]: "0xda8ad436e1dfe962091d86a341e957c6a5168a9d",
+      [eEthereumNetwork.main]: "0x8a2Efd9A790199F4c94c6effE210fce0B4724f52",
     },
     network
   );

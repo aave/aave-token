@@ -102,6 +102,13 @@ The Solidity code in this repository has undergone 2 traditional smart contracts
 - [Certik](audits/AaveTokenReport_CertiK.pdf)
 - [Certora](audits/AaveTokenVerification_by_Certora.pdf)
 
+## Current Mainnet contracts (25/09/2020)
+
+- **AaveToken proxy**: [0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9](https://etherscan.io/address/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9)
+- **AaveToken implementation**: [0xea86074fdac85e6a605cd418668c63d2716cdfbc](https://etherscan.io/address/0xea86074fdac85e6a605cd418668c63d2716cdfbc)
+- **LendToAaveMigrator proxy**: [0x317625234562b1526ea2fac4030ea499c5291de4](https://etherscan.io/address/0x317625234562b1526ea2fac4030ea499c5291de4)
+- **LendToAaveMigrator implementation**: [0x86241b6c526998582556f7c0342d8863b604b17b](https://etherscan.io/address/0x86241b6c526998582556f7c0342d8863b604b17b)
+
 ## Credits
 
 For the proxy-related contracts, we have used the implementation of our friend from [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-sdk/).

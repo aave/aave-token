@@ -10,6 +10,11 @@ services:
       - ganache
     volumes:
       - ./:/src
+    environment:
+      MNEMONIC: ${MNEMONIC}
+      ETHERSCAN_KEY: ${ETHERSCAN_KEY}
+      INFURA_KEY: ${INFURA_KEY}
+      ETHERSCAN_NETWORK: ${ETHERSCAN_NETWORK}
 
   ganache:
     image: trufflesuite/ganache-cli:latest
